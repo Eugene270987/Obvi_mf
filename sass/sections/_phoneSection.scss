@@ -119,12 +119,15 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #fff;
 
-    &:first-child:before {
-      clip-path: none;
-      top: 0;
-      background-color: #fff;
+    &:first-child{
+      border-radius: 30px 30px;
+
+      &:first-child:before {
+        clip-path: none;
+        top: 0;
+        background-color: #fff;
+      }
     }
 
     &__content {

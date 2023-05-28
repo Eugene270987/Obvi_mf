@@ -4,6 +4,10 @@ body {
   color: var(--mainColour);
   line-height: 1.4;
   padding-top: 87px;
+
+  @media screen and (min-width: 890px){
+    background-color: #EAF5F9;
+  }
 }
 
 .wrapper{
@@ -14,7 +18,26 @@ body {
 
 .main{
   flex: 1 1 auto;
+}
 
+@media screen and (min-width: 890px){
+  main{
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -200px;
+      left: 0;
+      background: linear-gradient(67.29deg, #9043F2 2.6%, #87DBFF 97.97%);
+      width: 100%;
+      max-width: 360px;
+      height: 520px;
+      z-index: -1;
+      clip-path: polygon(32% 0, 100% 0, 100% 38%, 55% 100%, 0 100%, 0 34%);
+    }
+  }
 }
 
 .container {
